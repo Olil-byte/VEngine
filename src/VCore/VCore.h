@@ -5,5 +5,7 @@ namespace Windows
 {
 	extern int Init();
 	extern void Terminate();
+
+	extern void PollEvents();
 }
 

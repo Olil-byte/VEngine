@@ -13,4 +13,9 @@ inline void Windows::Terminate()
 	glfwTerminate();
 }
 
+inline void Windows::PollEvents()
+{
+	glfwPollEvents();
+}
+
 

@@ -8,20 +8,21 @@ int main(int argc, char** argv)
     Window window;
 
     /* Make the window's context current */
-    glfwMakeContextCurrent(window.GetHandle());
+    window.MakeContext();
 
     /* Loop until the user closes the window */
-    while (!glfwWindowShouldClose(window.GetHandle()))
+    while (!window.IsShouldClose())
     {
         /* Render here */
 
         /* Swap front and back buffers */
-        glfwSwapBuffers(window.GetHandle());
+        window.SwapBuffers();
 
         /* Poll for and process events */
-        glfwPollEvents();
+        Windows::PollEvents();
     }
 
     Windows::Terminate();
+
 	return 0;
 }
