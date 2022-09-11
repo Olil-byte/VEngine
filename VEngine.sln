@@ -5,12 +5,17 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VEngine", "src\VEngine\VEngine.vcxproj", "{DEAB48A4-CE11-4827-9B72-A7E358826D33}"
 	ProjectSection(ProjectDependencies) = postProject
-		{282B1156-61B9-344E-9010-0A7C91C2033B} = {282B1156-61B9-344E-9010-0A7C91C2033B}
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F} = {3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GLFW", "externals\glfw-3.3.8\build\src\glfw.vcxproj", "{282B1156-61B9-344E-9010-0A7C91C2033B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Externals", "Externals", "{72AD8B67-507C-45C3-8E40-08630FE3FE4C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VCore", "src\VCore\VCore.vcxproj", "{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{282B1156-61B9-344E-9010-0A7C91C2033B} = {282B1156-61B9-344E-9010-0A7C91C2033B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +61,22 @@ Global
 		{282B1156-61B9-344E-9010-0A7C91C2033B}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
 		{282B1156-61B9-344E-9010-0A7C91C2033B}.RelWithDebInfo|x86.ActiveCfg = RelWithDebInfo|x64
 		{282B1156-61B9-344E-9010-0A7C91C2033B}.RelWithDebInfo|x86.Build.0 = RelWithDebInfo|x64
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.Debug|x64.ActiveCfg = Debug|x64
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.Debug|x64.Build.0 = Debug|x64
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.Debug|x86.ActiveCfg = Debug|Win32
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.Debug|x86.Build.0 = Debug|Win32
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.MinSizeRel|x64.ActiveCfg = Debug|x64
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.MinSizeRel|x64.Build.0 = Debug|x64
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.MinSizeRel|x86.ActiveCfg = Debug|Win32
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.MinSizeRel|x86.Build.0 = Debug|Win32
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.Release|x64.ActiveCfg = Release|x64
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.Release|x64.Build.0 = Release|x64
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.Release|x86.ActiveCfg = Release|Win32
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.Release|x86.Build.0 = Release|Win32
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.RelWithDebInfo|x64.ActiveCfg = Release|x64
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.RelWithDebInfo|x64.Build.0 = Release|x64
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.RelWithDebInfo|x86.ActiveCfg = Release|Win32
+		{3AFF6127-FC20-4A56-9DAC-47F3DB2D669F}.RelWithDebInfo|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

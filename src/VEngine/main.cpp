@@ -1,36 +1,27 @@
-#include <GLFW/glfw3.h>
+#include "VCore/VCore.h"
+#include "VCore/Window.h"
 
 int main(int argc, char** argv) 
 {
-    GLFWwindow* window;
+    Windows::Init();
 
-    /* Initialize the library */
-    if (!glfwInit())
-        return -1;
-
-    /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "VEngine", NULL, NULL);
-    if (!window)
-    {
-        glfwTerminate();
-        return -1;
-    }
+    Window window;
 
     /* Make the window's context current */
-    glfwMakeContextCurrent(window);
+    glfwMakeContextCurrent(window.GetHandle());
 
     /* Loop until the user closes the window */
-    while (!glfwWindowShouldClose(window))
+    while (!glfwWindowShouldClose(window.GetHandle()))
     {
         /* Render here */
 
         /* Swap front and back buffers */
-        glfwSwapBuffers(window);
+        glfwSwapBuffers(window.GetHandle());
 
         /* Poll for and process events */
         glfwPollEvents();
     }
 
-    glfwTerminate();
+    Windows::Terminate();
 	return 0;
 }
